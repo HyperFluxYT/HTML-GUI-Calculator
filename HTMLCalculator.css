@@ -1,0 +1,177 @@
+body {background-color: White;}
+    h1 {color: MediumSlateBlue; font-family: Doppio One;}
+    p {color: black; font-family: Bahnschrift;}
+    label {color: black; font-family: Bahnschrift}
+    select {
+              appearance: none;
+              outline: 0;
+              background: pink;
+              background-image: none;
+              width: 10%;
+              height: 50%;
+              color: MediumSlateBlue;
+              cursor: pointer;
+              border:1px solid black;
+              border-radius:3px;
+          }
+          .select {
+              position: relative;
+              display: block;
+              width: 15em;
+              height: 2em;
+              line-height: 3;
+              overflow: hidden;
+              border-radius: .25em;
+              padding-bottom:10px;
+          }
+          .button {
+              border: none;
+              color: black;
+              padding: 30px 40px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .negatebutton {
+                border: none;
+                color: black;
+                padding: 30px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+              }
+            input[type=text] {
+              width: 27%;
+              padding: 18px 12px;
+              margin: 8px 0;
+              box-sizing: border-box;
+              font-size: 35px;
+              text-align: right;
+              font-family: Bahnschrift Condensed;
+            }
+            input[type=Number] {
+              width: 50%;
+              padding: 12px 12px;
+              margin: 8px 0;
+              box-sizing: border-box;
+            }
+            html {
+              margin-top: 50px;
+              margin-left: 50px;
+            }
+            .percentagebutton {
+              border: none;
+              color: black;
+              padding: 30px 37px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .cebutton {
+              border: none;
+              color: black;
+              padding: 30px 34px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .cbutton {
+              border: none;
+              color: black;
+              padding: 30px 38px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .decimalbutton {
+              border: none;
+              color: black;
+              padding: 30px 42px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .backspacebutton {
+              border: none;
+              color: black;
+              padding: 29px 40px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .reciprocbutton {
+              border: none;
+              color: black;
+              padding: 30px 34px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .squarebutton {
+              border: none;
+              color: black;
+              padding: 30px 37px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .sqrtbutton {
+              border: none;
+              color: black;
+              padding: 30px 36px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .divbutton {
+              border: none;
+              color: black;
+              padding: 30px 45px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            .subbutton {
+              border: none;
+              color: black;
+              padding: 30px 47px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
