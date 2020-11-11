@@ -1,69 +1,69 @@
 var isAnswer=false;
 function num1click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"1";
         isAnswer=false;
       }
       function num2click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"2";
         isAnswer=false;
       }
       function num3click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"3";
         isAnswer=false;
       }
       function num4click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"4";
         isAnswer=false;
       }
       function num5click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"5";
         isAnswer=false;
       }
       function num6click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"6";
         isAnswer=false;
       }
       function num7click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"7";
         isAnswer=false;
       }
       function num8click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"8";
         isAnswer=false;
       }
       function num9click() {
-        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="0" || document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         document.getElementById("displayfield").value=document.getElementById("displayfield").value+"9";
         isAnswer=false;
       }
       function num0click() {
-        if (document.getElementById("displayfield").value=="NaN" || document.getElementById("bufftext").value=="ans") {
+        if (document.getElementById("displayfield").value=="NaN" || isAnswer) {
           document.getElementById("displayfield").value=null;
         }
         if (document.getElementById("displayfield").value!="0") {
@@ -98,32 +98,32 @@ function num1click() {
         var val1=parseFloat(document.getElementById("displayfield").value);
         var val2=1/val1;
         document.getElementById("displayfield").value=val2;
-        document.getElementById("bufftext").value="ans";
+        isAnswer=true;
       }
       function divisionf() {
         equals();
-        document.getElementById("bufftext").value="nononono";
+        isAnswer=false;
         if (document.getElementById("displayfield").value!="0" && !document.getElementById("displayfield").value.includes("÷",0)) {
           document.getElementById("displayfield").value=document.getElementById("displayfield").value+"÷";
         }
       }
       function multiplicationf() {
         equals();
-        document.getElementById("bufftext").value="nononono";
+        isAnswer=false;
         if (document.getElementById("displayfield").value!="0" && !document.getElementById("displayfield").value.includes("×",0)) {
           document.getElementById("displayfield").value=document.getElementById("displayfield").value+"×";
         }
       }
       function subtract() {
         equals();
-        document.getElementById("bufftext").value="nononono";
+        isAnswer=false;
         if (document.getElementById("displayfield").value!="0" && !document.getElementById("displayfield").value.includes("-",0)) {
           document.getElementById("displayfield").value=document.getElementById("displayfield").value+"-";
         }
       }
       function add() {
         equals();
-        document.getElementById("bufftext").value="nononono";
+        isAnswer=false;
         if (document.getElementById("displayfield").value!="0" && !document.getElementById("displayfield").value.includes("+",0)) {
           document.getElementById("displayfield").value=document.getElementById("displayfield").value+"+";
         }
@@ -181,21 +181,21 @@ function num1click() {
           var val3=val1*val2;
           document.getElementById("displayfield").value=val3;
         }
-        document.getElementById("bufftext").value="ans";
+        isAnswer=false;
       }
       function square() {
         equals();
         var val1=parseFloat(document.getElementById("displayfield").value);
         var val2=Math.pow(val1,2);
         document.getElementById("displayfield").value=val2;
-        document.getElementById("bufftext").value="ans";
+        isAnswer=false;
       }
       function sqrtt() {
         equals();
         var val1=parseFloat(document.getElementById("displayfield").value);
         var val2=Math.pow(val1,1/2);
         document.getElementById("displayfield").value=val2;
-        document.getElementById("bufftext").value="ans";
+        isAnswer=false;
       }
       function percentage() {
         divisionf();
