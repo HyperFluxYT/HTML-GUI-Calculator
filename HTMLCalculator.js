@@ -137,8 +137,7 @@ function add() {
 function equals() {
   if (
     displayField.value.includes("+", 0) &&
-    document
-      .getElementById("displayfield")
+    displayField
       .value.charAt(displayField.value.length - 1) != "+"
   ) {
     let val1 = parseFloat(
@@ -214,8 +213,7 @@ function equals() {
 function equalsbutton() {
   if (
     displayField.value.includes("+", 0) &&
-    document
-      .getElementById("displayfield")
+    displayField
       .value.charAt(displayField.value.length - 1) != "+"
   ) {
     let val1 = parseFloat(
@@ -314,20 +312,16 @@ function NaNcheck() {
 }
 function cefunc() {
   if (displayField.value.includes("+", 0)) {
-    displayField.value = document
-      .getElementById("displayfield")
+    displayField.value = displayField
       .value.slice(0, displayField.value.indexOf("+", 0) + 1);
   } else if (displayField.value.includes("-", 0)) {
-    displayField.value = document
-      .getElementById("displayfield")
+    displayField.value = displayField
       .value.slice(0, displayField.value.indexOf("-", 0) + 1);
   } else if (displayField.value.includes("×", 0)) {
-    displayField.value = document
-      .getElementById("displayfield")
+    displayField.value = displayField
       .value.slice(0, displayField.value.indexOf("×", 0) + 1);
   } else if (displayField.value.includes("÷", 0)) {
-    displayField.value = document
-      .getElementById("displayfield")
+    displayField.value = displayField
       .value.slice(0, displayField.value.indexOf("÷", 0) + 1);
   } else {
     cleardisplayfield();
