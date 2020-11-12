@@ -13,28 +13,6 @@ label {
   color: black;
   font-family: Bahnschrift;
 }
-select {
-  appearance: none;
-  outline: 0;
-  background: pink;
-  background-image: none;
-  width: 10%;
-  height: 50%;
-  color: MediumSlateBlue;
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 3px;
-}
-.select {
-  position: relative;
-  display: block;
-  width: 15em;
-  height: 2em;
-  line-height: 3;
-  overflow: hidden;
-  border-radius: 0.25em;
-  padding-bottom: 10px;
-}
 .button {
   border: none;
   color: black;
