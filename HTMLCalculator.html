@@ -2,39 +2,46 @@
 <html>
   <head>
     <title>HTML GUI Calculator</title>
-    <link rel="stylesheet" href="HTMLCalculator.css>
+    <link rel="stylesheet" href="HTMLCalculator.css">
   </head>
   <body>
     <script src="HTMLCalculator.js"></script>
     <div id="heading"><h1>Welcome to the HTML GUI Calculator!</h1></div>
     <div id="GUI">
-      <input readonly type="text" id="displayfield" name="displayfield" value="0"><br>
+      <input readonly type="text" id="displayfield" name="displayfield" value="0">
+      <br>
       <button type="button" class="percentagebutton" onclick="percentage()">%</button>
       <button type="button" class="cebutton" onclick="cefunc()">CE</button>
       <button type="button" class="cbutton" onclick="cleardisplayfield()">C</button>
-      <button type="button" class="backspacebutton" onclick="bckspace()">⌫</button><br>
+      <button type="button" class="backspacebutton" onclick="bckspace()">⌫</button>
+      <br>
       <button type="button" class="reciprocbutton" onclick="reciprocal()">1/x</button>
       <button type="button" class="squarebutton" onclick="square()">x<sup>2</sup></button>
       <button type="button" class="sqrtbutton" onclick="sqrtt()">√x</button>
-      <button type="button" class="divbutton" onclick="divisionf()">÷</button><br>
+      <button type="button" class="divbutton" onclick="divisionf()">÷</button>
+      <br>
       <button type="button" class="button" onclick="num7click()">7</button>
       <button type="button" class="button" onclick="num8click()">8</button>
       <button type="button" class="button" onclick="num9click()">9</button>
-      <button type="button" class="divbutton" onclick="multiplicationf()">×</button><br>
+      <button type="button" class="divbutton" onclick="multiplicationf()">×</button>
+      <br>
       <button type="button" class="button" onclick="num4click()">4</button>
       <button type="button" class="button" onclick="num5click()">5</button>
       <button type="button" class="button" onclick="num6click()">6</button>
-      <button type="button" class="subbutton" onclick="subtract()">-</button><br>
+      <button type="button" class="subbutton" onclick="subtract()">-</button>
+      <br>
       <button type="button" class="button" onclick="num1click()">1</button>
       <button type="button" class="button" onclick="num2click()">2</button>
       <button type="button" class="button" onclick="num3click()">3</button>
-      <button type="button" class="divbutton" onclick="add()">+</button><br>
+      <button type="button" class="divbutton" onclick="add()">+</button>
+      <br>
       <button type="button" class="negatebutton" onclick="negate()" >+/-</button>
       <button type="button" class="button" onclick="num0click()">0</button>
       <button type="button" class="decimalbutton" onclick="decimalpoint()">.</button>
       <button type="button" class="divbutton" onclick="equalsbutton()">=</button>
     </div>
-    <p id="bufftext" style="display: none">nononono</p>
-    <p><font size="1">This webpage was made by HyperFlux and posted on Github. Check out HyperFlux <a href="https://www.github.com/HyperFluxYT">here</a></font></p>
+    <p style="font-size: small;">
+      This webpage was made by HyperFlux and posted on Github. Check out HyperFlux <a href="https://www.github.com/HyperFluxYT">here</a>
+    </p>
   </body>
 </html>
