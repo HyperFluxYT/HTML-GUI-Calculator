@@ -92,9 +92,10 @@ function decimalpoint() {
   displayField.value = displayField.value + ".";
 }
 function bckspace() {
-  displayField.value = document
-    .getElementById("displayfield")
-    .value.slice(0, displayField.value.length - 1);
+  displayField.value = displayField.value.slice(
+    0,
+    displayField.value.length - 1
+  );
   if (displayField.value == "") {
     displayField.value = "0";
   }
@@ -140,35 +141,27 @@ function equals() {
     displayField.value.charAt(displayField.value.length - 1) != "+"
   ) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("+", 0))
+      displayField.value.slice(0, displayField.value.indexOf("+", 0))
     );
     let val2 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(
-          displayField.value.indexOf("+", 0),
-          displayField.value.length
-        )
+      displayField.value.slice(
+        displayField.value.indexOf("+", 0),
+        displayField.value.length
+      )
     );
     let val3 = val1 + val2;
     displayField.value = val3;
   }
   if (displayField.value.includes("-", 0)) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("-", 0))
+      displayField.value.slice(0, displayField.value.indexOf("-", 0))
     );
     let val2 = Math.abs(
       parseFloat(
-        document
-          .getElementById("displayfield")
-          .value.slice(
-            displayField.value.indexOf("-", 0),
-            displayField.value.length
-          )
+        displayField.value.slice(
+          displayField.value.indexOf("-", 0),
+          displayField.value.length
+        )
       )
     );
     let val3 = val1 - val2;
@@ -176,34 +169,26 @@ function equals() {
   }
   if (displayField.value.includes("÷", 0)) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("÷", 0))
+      displayField.value.slice(0, displayField.value.indexOf("÷", 0))
     );
     let val2 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(
-          displayField.value.indexOf("÷", 0) + 1,
-          displayField.value.length
-        )
+      displayField.value.slice(
+        displayField.value.indexOf("÷", 0) + 1,
+        displayField.value.length
+      )
     );
     let val3 = val1 / val2;
     displayField.value = val3;
   }
   if (displayField.value.includes("×", 0)) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("×", 0))
+      displayField.value.slice(0, displayField.value.indexOf("×", 0))
     );
     let val2 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(
-          displayField.value.indexOf("×", 0) + 1,
-          displayField.value.length
-        )
+      displayField.value.slice(
+        displayField.value.indexOf("×", 0) + 1,
+        displayField.value.length
+      )
     );
     let val3 = val1 * val2;
     displayField.value = val3;
@@ -215,35 +200,27 @@ function equalsbutton() {
     displayField.value.charAt(displayField.value.length - 1) != "+"
   ) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("+", 0))
+      displayField.value.slice(0, displayField.value.indexOf("+", 0))
     );
     let val2 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(
-          displayField.value.indexOf("+", 0),
-          displayField.value.length
-        )
+      displayField.value.slice(
+        displayField.value.indexOf("+", 0),
+        displayField.value.length
+      )
     );
     let val3 = val1 + val2;
     displayField.value = val3;
   }
   if (displayField.value.includes("-", 0)) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("-", 0))
+      displayField.value.slice(0, displayField.value.indexOf("-", 0))
     );
     let val2 = Math.abs(
       parseFloat(
-        document
-          .getElementById("displayfield")
-          .value.slice(
-            displayField.value.indexOf("-", 0),
-            displayField.value.length
-          )
+        displayField.value.slice(
+          displayField.value.indexOf("-", 0),
+          displayField.value.length
+        )
       )
     );
     let val3 = val1 - val2;
@@ -251,34 +228,26 @@ function equalsbutton() {
   }
   if (displayField.value.includes("÷", 0)) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("÷", 0))
+      displayField.value.slice(0, displayField.value.indexOf("÷", 0))
     );
     let val2 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(
-          displayField.value.indexOf("÷", 0) + 1,
-          displayField.value.length
-        )
+      displayField.value.slice(
+        displayField.value.indexOf("÷", 0) + 1,
+        displayField.value.length
+      )
     );
     let val3 = val1 / val2;
     displayField.value = val3;
   }
   if (displayField.value.includes("×", 0)) {
     let val1 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(0, displayField.value.indexOf("×", 0))
+      displayField.value.slice(0, displayField.value.indexOf("×", 0))
     );
     let val2 = parseFloat(
-      document
-        .getElementById("displayfield")
-        .value.slice(
-          displayField.value.indexOf("×", 0) + 1,
-          displayField.value.length
-        )
+      displayField.value.slice(
+        displayField.value.indexOf("×", 0) + 1,
+        displayField.value.length
+      )
     );
     let val3 = val1 * val2;
     displayField.value = val3;
@@ -334,38 +303,21 @@ function cefunc() {
   }
 }
 window.addEventListener("keydown", (event) => {
-  if (event.key === "1")
-    num1click();
-  if (event.key === "0")
-    num0click();
-  if (event.key === "2")
-    num2click();
-  if (event.key === "3")
-    num3click();
-  if (event.key === "4")
-    num4click();
-  if (event.key === "5")
-    num5click();
-  if (event.key === "6")
-    num6click();
-  if (event.key === "7")
-    num7click();
-  if (event.key === "8")
-    num8click();
-  if (event.key === "9")
-    num9click();
-  if (event.key === "c")
-    cleardisplayfield();
-  if (event.key === "/")
-    divisionf();
-  if (event.key === "Enter")
-    equalsbutton();
-  if (event.key === "=")
-    add();
-  if (event.key === "x")
-    multiplicationf();
-  if (event.key === "-")
-    subtract();
-  if (event.key === ".")
-    decimalpoint();
+  if (event.key === "1") num1click();
+  if (event.key === "0") num0click();
+  if (event.key === "2") num2click();
+  if (event.key === "3") num3click();
+  if (event.key === "4") num4click();
+  if (event.key === "5") num5click();
+  if (event.key === "6") num6click();
+  if (event.key === "7") num7click();
+  if (event.key === "8") num8click();
+  if (event.key === "9") num9click();
+  if (event.key === "c") cleardisplayfield();
+  if (event.key === "/") divisionf();
+  if (event.key === "Enter") equalsbutton();
+  if (event.key === "=") add();
+  if (event.key === "x") multiplicationf();
+  if (event.key === "-") subtract();
+  if (event.key === ".") decimalpoint();
 });
