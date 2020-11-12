@@ -137,8 +137,7 @@ function add() {
 function equals() {
   if (
     displayField.value.includes("+", 0) &&
-    displayField
-      .value.charAt(displayField.value.length - 1) != "+"
+    displayField.value.charAt(displayField.value.length - 1) != "+"
   ) {
     let val1 = parseFloat(
       document
@@ -213,8 +212,7 @@ function equals() {
 function equalsbutton() {
   if (
     displayField.value.includes("+", 0) &&
-    displayField
-      .value.charAt(displayField.value.length - 1) != "+"
+    displayField.value.charAt(displayField.value.length - 1) != "+"
   ) {
     let val1 = parseFloat(
       document
@@ -312,71 +310,62 @@ function NaNcheck() {
 }
 function cefunc() {
   if (displayField.value.includes("+", 0)) {
-    displayField.value = displayField
-      .value.slice(0, displayField.value.indexOf("+", 0) + 1);
+    displayField.value = displayField.value.slice(
+      0,
+      displayField.value.indexOf("+", 0) + 1
+    );
   } else if (displayField.value.includes("-", 0)) {
-    displayField.value = displayField
-      .value.slice(0, displayField.value.indexOf("-", 0) + 1);
+    displayField.value = displayField.value.slice(
+      0,
+      displayField.value.indexOf("-", 0) + 1
+    );
   } else if (displayField.value.includes("×", 0)) {
-    displayField.value = displayField
-      .value.slice(0, displayField.value.indexOf("×", 0) + 1);
+    displayField.value = displayField.value.slice(
+      0,
+      displayField.value.indexOf("×", 0) + 1
+    );
   } else if (displayField.value.includes("÷", 0)) {
-    displayField.value = displayField
-      .value.slice(0, displayField.value.indexOf("÷", 0) + 1);
+    displayField.value = displayField.value.slice(
+      0,
+      displayField.value.indexOf("÷", 0) + 1
+    );
   } else {
     cleardisplayfield();
   }
 }
 window.addEventListener("keydown", (event) => {
-  if (event.key === "1") {
+  if (event.key === "1")
     num1click();
-  }
-  if (event.key === "0") {
+  if (event.key === "0")
     num0click();
-  }
-  if (event.key === "2") {
+  if (event.key === "2")
     num2click();
-  }
-  if (event.key === "3") {
+  if (event.key === "3")
     num3click();
-  }
-  if (event.key === "4") {
+  if (event.key === "4")
     num4click();
-  }
-  if (event.key === "5") {
+  if (event.key === "5")
     num5click();
-  }
-  if (event.key === "6") {
+  if (event.key === "6")
     num6click();
-  }
-  if (event.key === "7") {
+  if (event.key === "7")
     num7click();
-  }
-  if (event.key === "8") {
+  if (event.key === "8")
     num8click();
-  }
-  if (event.key === "9") {
+  if (event.key === "9")
     num9click();
-  }
-  if (event.key === "c") {
+  if (event.key === "c")
     cleardisplayfield();
-  }
-  if (event.key === "/") {
+  if (event.key === "/")
     divisionf();
-  }
-  if (event.key === "Enter") {
+  if (event.key === "Enter")
     equalsbutton();
-  }
-  if (event.key === "=") {
+  if (event.key === "=")
     add();
-  }
-  if (event.key === "x") {
+  if (event.key === "x")
     multiplicationf();
-  }
-  if (event.key === "-") {
+  if (event.key === "-")
     subtract();
-  }
-  if (event.key === ".") {
+  if (event.key === ".")
     decimalpoint();
-  }
 });
