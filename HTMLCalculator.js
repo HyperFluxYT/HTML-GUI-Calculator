@@ -1,9 +1,12 @@
 var isAnswer = false;
+function checkRefresh() {
+  return document.getElementById("displayfield").value == "0" ||
+    document.getElementById("displayfield").value == "NaN" ||
+    isAnswer;
+}
 function num1click() {
   if (
-    document.getElementById("displayfield").value == "0" ||
-    document.getElementById("displayfield").value == "NaN" ||
-    isAnswer
+    checkRefresh()
   ) {
     document.getElementById("displayfield").value = null;
   }
