@@ -65,6 +65,7 @@ function num9click() {
   }
   displayField.value = displayField.value + "9";
   isAnswer = false;
+  
 }
 function num0click() {
   if (displayField.value == "NaN" || isAnswer) {
